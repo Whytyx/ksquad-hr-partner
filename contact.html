@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,560&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -34,19 +34,24 @@
     <h1>Tell me what's happening in your business.</h1>
     <p class="lede">No sales pitch, no obligation. If I can help, I'll tell you how. If I can't, I'll tell you that too.</p>
     <form id="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
-      <label>Name (required)
+      <label>
+        <span>Name (required)</span>
         <input name="name" type="text" autocomplete="name" required>
       </label>
-      <label>Business name
+      <label>
+        <span>Business name</span>
         <input name="business" type="text" autocomplete="organization">
       </label>
-      <label>Email (required)
+      <label>
+        <span>Email (required)</span>
         <input name="email" type="email" autocomplete="email" required>
       </label>
-      <label>Phone
+      <label>
+        <span>Phone</span>
         <input name="phone" type="tel" autocomplete="tel">
       </label>
-      <label>What do you need help with? (dropdown required)
+      <label>
+        <span>What do you need help with? (dropdown required)</span>
         <select name="help" required>
           <option value="" selected disabled>What do you need help with?</option>
           <option>Hiring & Onboarding</option>
@@ -56,7 +61,8 @@
           <option>Something else</option>
         </select>
       </label>
-      <label>Tell me briefly what's going on (required)
+      <label>
+        <span>Tell me briefly what's going on (required)</span>
         <textarea name="message" required></textarea>
       </label>
       <div class="actions">
@@ -65,12 +71,11 @@
     </form>
     <p>I aim to respond within one working day.</p>
     <div id="form-confirmation" class="confirm" tabindex="-1" hidden>
-      <p><strong>Ready to send.</strong> Your email app should open with this message addressed to hello@example.com. That address is a placeholder, and this website does not store the form. If the email app does not open, use the address below and include the same details.</p>
+      <p><strong>Ready to send.</strong> Your email app should open with this message addressed to hello@example.com. If it does not open, use the address below.</p>
     </div>
     <div class="contact-links">
-      <p>Email (placeholder): <a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p>LinkedIn: <a href="#">LinkedIn</a></p>
-      <p class="note">The email address and LinkedIn link are placeholders until live details are confirmed. Company details to follow. <a href="privacy.html">Privacy Notice</a></p>
+      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p><a href="#">LinkedIn</a></p>
     </div>
   </div>
 </section>
