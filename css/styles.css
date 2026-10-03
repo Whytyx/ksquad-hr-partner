@@ -446,3 +446,5 @@ textarea { min-height: 9rem; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.service, [id] { scroll-margin-top: 5.5rem; }
