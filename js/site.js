@@ -1,4 +1,3 @@
-
 (function () {
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
@@ -17,14 +16,18 @@
     event.preventDefault();
     var data = new FormData(form);
     var name = String(data.get("name") || "").trim();
-    var email = String(data.get("email") || "").trim();
     var business = String(data.get("business") || "").trim();
+    var email = String(data.get("email") || "").trim();
+    var phone = String(data.get("phone") || "").trim();
+    var help = String(data.get("help") || "").trim();
     var message = String(data.get("message") || "").trim();
-    var subject = "Conversation request — " + (name || "website");
+    var subject = "Enquiry — " + (name || "website");
     var body = [
       "Name: " + name,
+      "Business name: " + (business || "(not given)"),
       "Email: " + email,
-      "Business: " + (business || "(not given)"),
+      "Phone: " + (phone || "(not given)"),
+      "What do you need help with?: " + help,
       "",
       message
     ].join("\n");
