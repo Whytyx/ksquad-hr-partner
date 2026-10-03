@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — KSquad HR Partner</title>
+  <meta name="description" content="Book a free initial conversation with KSquad HR Partner. The form opens an email to a placeholder address.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,560&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">KSquad <span>HR Partner</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="hospitality.html">Hospitality</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="content">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Get in touch.</h1>
+    <p class="lede">Book a free initial conversation. Tell me a little about the business and what you would like to talk through. This is a static page: nothing is stored here.</p>
+    <form id="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+      <label>Name
+        <input name="name" type="text" autocomplete="name" required>
+      </label>
+      <label>Email
+        <input name="email" type="email" autocomplete="email" required>
+      </label>
+      <label>Business
+        <input name="business" type="text" autocomplete="organization">
+      </label>
+      <label>What you would like to talk about
+        <textarea name="message" required></textarea>
+      </label>
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">Book a free initial conversation</button>
+      </div>
+    </form>
+    <div id="form-confirmation" class="confirm" tabindex="-1" hidden>
+      <p><strong>Ready to send.</strong> Your email app should open with this message addressed to hello@example.com. That address is a placeholder, and this website does not store the form. If the email app does not open, use the address below and include the same details.</p>
+    </div>
+    <div class="contact-links">
+      <p>Email (placeholder): <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>LinkedIn: <a href="#">LinkedIn</a></p>
+      <p class="note">The email address and LinkedIn link are placeholders until live details are confirmed. Company details to follow.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">KSquad HR Partner</p>
+      <p class="note">Hospitality HR consultancy. Practical people support for owners and managers.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="hospitality.html">Hospitality</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>© 2026 KSquad HR Partner</p>
+    <p>Company details to follow</p>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
