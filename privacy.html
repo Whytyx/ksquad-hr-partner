@@ -3,41 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Notice — KSquad HR Partner</title>
-  <meta name="description" content="Placeholder privacy note for the KSquad HR Partner website.">
+  <title data-i18n="title.privacy">Privacy Notice — KSquad HR Partner</title>
+  <meta name="description" content="Placeholder privacy note for the KSquad HR Partner website." data-i18n-attr="content:meta.privacy">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560&family=Outfit:wght@400;500;600&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<a class="skip" href="#content">Skip to content</a>
+<a class="skip" href="#content" data-i18n="skip">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="index.html">KSquad <span>HR Partner</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="hospitality.html">Hospitality</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <nav id="site-nav" class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="hospitality.html" data-i18n="nav.hospitality">Hospitality</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-set-lang="th" aria-pressed="false">TH</button>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="nav.menu">Menu</button>
+    </div>
   </div>
 </header>
 <main id="content">
 
 <section class="page-hero">
   <div class="wrap prose">
-    <p class="eyebrow">Privacy</p>
-    <h1>Privacy Notice</h1>
+    <p class="eyebrow" data-i18n="eye.privacy">Privacy</p>
+    <h1 data-i18n="footer.privacy">Privacy Notice</h1>
     
-    <p>This is a short, honest placeholder. It is not a finished privacy notice.</p>
-    <p>The site is static. The contact form does not send your details to a server and does not save them on this website. Submitting it opens your own email app with a message addressed to hello@example.com, which is a placeholder inbox, not a confirmed company address.</p>
-    <p>This site does not use analytics and does not set tracking cookies. Please do not send sensitive personal information, about staff or guests, through the form until a real contact address is published.</p>
+    <p data-i18n="priv.p1">This is a short, honest placeholder. It is not a finished privacy notice.</p>
+    <p data-i18n="priv.p2">The site is static. The contact form does not send your details to a server and does not save them on this website. Submitting it opens your own email app with a message addressed to hello@example.com, which is a placeholder inbox, not a confirmed company address.</p>
+    <p data-i18n="priv.p3">This site does not use analytics and does not set tracking cookies. Please do not send sensitive personal information, about staff or guests, through the form until a real contact address is published.</p>
     
-    <p class="note">Company details to follow. This page is a plain placeholder, not legal advice and not a finished policy. Questions: <a href="mailto:hello@example.com">hello@example.com</a> (placeholder email).</p>
+    <p class="note"><span data-i18n="legal.noteBefore">Company details to follow. This page is a plain placeholder, not legal advice and not a finished policy. Questions: </span><a href="mailto:hello@example.com">hello@example.com</a><span data-i18n="legal.noteAfter"> (placeholder email).</span></p>
   </div>
 </section>
 
@@ -46,29 +53,30 @@
   <div class="wrap footer-grid">
     <div>
       <p class="footer-brand">KSquad HR Partner</p>
-      <p class="note">Practical HR, hiring and people compliance support.</p>
+      <p class="note" data-i18n="footer.tagline">Practical HR, hiring and people compliance support.</p>
     </div>
-    <nav aria-label="Footer">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="hospitality.html">Hospitality</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <nav aria-label="Footer" data-i18n-attr="aria-label:nav.footer">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="hospitality.html" data-i18n="nav.hospitality">Hospitality</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
     <div>
-      <p><a href="mailto:hello@example.com">Email</a> · <a href="#">LinkedIn</a></p>
-      <nav aria-label="Legal">
-        <a href="privacy.html">Privacy Notice</a>
-        <a href="cookies.html">Cookie Policy</a>
-        <a href="terms.html">Terms</a>
+      <p><a href="mailto:hello@example.com" data-i18n="footer.email">Email</a> · <a href="#">LinkedIn</a></p>
+      <nav aria-label="Legal" data-i18n-attr="aria-label:nav.legal">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Notice</a>
+        <a href="cookies.html" data-i18n="footer.cookies">Cookie Policy</a>
+        <a href="terms.html" data-i18n="eye.terms">Terms</a>
       </nav>
     </div>
   </div>
   <div class="wrap footer-base">
-    <p>Company details to follow</p>
+    <p data-i18n="footer.company">Company details to follow</p>
     <p>© 2026 KSquad HR Partner</p>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/site.js"></script>
 <script src="js/chat.js"></script>
 </body>

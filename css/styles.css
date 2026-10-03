@@ -622,3 +622,54 @@ em { font-style: italic; }
   padding: 0 0.9rem;
   cursor: pointer;
 }
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font: 600 0.82rem/1 var(--sans);
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  padding: 0.35rem 0.12rem;
+}
+
+.lang-switch button[aria-pressed="true"] { color: var(--text); }
+
+.lang-switch span { color: var(--muted); }
+
+html[lang="th"] body,
+html[lang="th"] button,
+html[lang="th"] input,
+html[lang="th"] textarea,
+html[lang="th"] select {
+  font-family: "Sarabun", var(--sans);
+  line-height: 1.85;
+}
+
+html[lang="th"] h1,
+html[lang="th"] h2,
+html[lang="th"] h3,
+html[lang="th"] .brand,
+html[lang="th"] .footer-brand,
+html[lang="th"] .chat-title {
+  font-family: "Sarabun", var(--serif);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+html[lang="th"] h1,
+html[lang="th"] .page-hero h1 { max-width: 22ch; }
+
+.chat-go { margin-top: 0.7rem; }
